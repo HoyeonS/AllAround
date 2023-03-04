@@ -4,25 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SignupActivity">
 
     <EditText
-        android:id="@+id/editEmail"
+        android:id="@+id/EditName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Emaill Address"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/EditPassword"
+        android:hint="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852"
+        app:layout_constraintVertical_bias="0.083"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/EditPassword"
+        android:id="@+id/EditPassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -30,33 +29,36 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.282"
+        app:layout_constraintTop_toBottomOf="@+id/EditEmail2"
+        app:layout_constraintVertical_bias="0.072"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/SignupBtn"
-        android:layout_width="185dp"
-        android:layout_height="40dp"
-        android:text="Sign Up"
+    <EditText
+        android:id="@+id/EditEmail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email Adress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginBtn"
-        app:layout_constraintVertical_bias="0.054"
+        app:layout_constraintTop_toBottomOf="@+id/EditName"
+        app:layout_constraintVertical_bias="0.071"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/LoginBtn"
-        android:layout_width="157dp"
-        android:layout_height="62dp"
-        android:text="Login"
+        android:id="@+id/SignupStartBtn"
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditPassword"
-        app:layout_constraintVertical_bias="0.175" />
+        app:layout_constraintTop_toBottomOf="@+id/EditPassword2"
+        app:layout_constraintVertical_bias="0.115" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
