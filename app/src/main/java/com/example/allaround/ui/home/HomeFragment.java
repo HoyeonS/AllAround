@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -26,6 +27,11 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         ProgressBar progressBar = binding.simpleProgressBar;
+        ImageView snail = binding.snail;
+
+        snail.setX((float)(20 + 950.0 * Client.getInstance().getMontlyDonation() / Client.getInstance().getMontlyGoal()));
+
+
         if(Client.getInstance().getMontlyGoal() > 0)
             progressBar.setProgress((int)(100.0 * Client.getInstance().getMontlyDonation() / Client.getInstance().getMontlyGoal()));
         final TextView textView = binding.textHome;

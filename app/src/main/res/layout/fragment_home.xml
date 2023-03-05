@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/homeback"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
@@ -46,6 +47,18 @@
         app:layout_constraintBottom_toTopOf="@+id/TextMonth"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/snail"
+        android:layout_width="32dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/snail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

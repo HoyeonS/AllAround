@@ -4,107 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/loginback"
     tools:context=".SignupActivity">
-
-    <EditText
-        android:id="@+id/EditName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09"
-        tools:ignore="TouchTargetSizeCheck" />
-    <EditText
-        android:id="@+id/EditEmail2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="5dp"
-        android:hint="Email Adress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditName"
-        app:layout_constraintVertical_bias="0.056"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/EditPassword2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="5dp"
-        android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditEmail2"
-        app:layout_constraintVertical_bias="0.072"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/BankName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="5dp"
-        android:hint="Bank Name"
-        app:layout_constraintBottom_toTopOf="@+id/SignupStartBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditPassword2"
-        app:layout_constraintVertical_bias="0.135"
-        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/MonthlyGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="Montly Goal"
+        android:hint="Set your Montly Goal"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/SignupStartBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BankName"
-        app:layout_constraintVertical_bias="0.144"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/BankId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="5dp"
-        android:hint="Bank User ID"
-        app:layout_constraintBottom_toTopOf="@+id/SignupStartBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MonthlyGoal"
-        app:layout_constraintVertical_bias="0.212"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/SignupStartBtn"
         android:layout_width="155dp"
         android:layout_height="66dp"
-        android:text="Sign Up"
+        android:layout_marginBottom="368dp"
+        android:text="Add Bank Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditPassword2"
-        app:layout_constraintVertical_bias="0.868" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
