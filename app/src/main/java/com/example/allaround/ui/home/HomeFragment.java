@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.allaround.Client;
 import com.example.allaround.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -23,7 +25,9 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
+        ProgressBar progressBar = binding.simpleProgressBar;
+        if(Client.getInstance().getMontlyGoal() > 0)
+            progressBar.setProgress((int)(100.0 * Client.getInstance().getMontlyDonation() / Client.getInstance().getMontlyGoal()));
         final TextView textView = binding.textHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;

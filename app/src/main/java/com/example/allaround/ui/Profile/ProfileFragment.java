@@ -10,8 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.allaround.Client;
 import com.example.allaround.databinding.FragmentProfileBinding;
 import com.example.allaround.ui.Profile.ProfileViewModel;
+
+import org.w3c.dom.Text;
 
 public class ProfileFragment extends Fragment {
 
@@ -24,6 +27,18 @@ public class ProfileFragment extends Fragment {
 
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        TextView viewName = binding.viewName;
+        TextView viewBank = binding.viewBank;
+        TextView viewGoal = binding.viewGoal;
+        TextView viewDonation = binding.viewDonation;
+        TextView viewStatus = binding.viewStatus;
+
+        viewName.setText("Name: " + Client.getInstance().getName());
+        viewBank.setText("Bank: " + Client.getInstance().getBankName());
+        viewGoal.setText("Monthly Goal: $" + Client.getInstance().getMontlyGoal());
+        viewDonation.setText("Current Donation: $" + Client.getInstance().getMontlyDonation());
+        viewStatus.setText("Percentage achieved: %" + (int)(100.0 * Client.getInstance().getMontlyDonation() / Client.getInstance().getMontlyGoal()));
+
 
         final TextView textView = binding.textProfile;
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);

@@ -10,7 +10,7 @@ public class RoundupViewModel extends ViewModel {
 
     public RoundupViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("Wrapupped!");
     }
 
     public LiveData<String> getText() {
