@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AllAround</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_roundup">Roundup</string>
+    <string name="title_Charities">Find Charities</string>
+    <string name="title_profile">Profile</string>
 </resources>

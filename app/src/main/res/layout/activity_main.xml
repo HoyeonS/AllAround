@@ -41,6 +41,7 @@
         android:layout_width="185dp"
         android:layout_height="40dp"
         android:text="Sign Up"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,4 +60,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EditPassword"
         app:layout_constraintVertical_bias="0.175" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="261dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="476dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screenshot_2023_03_04_at_5_15_20_pm" />
 </androidx.constraintlayout.widget.ConstraintLayout>

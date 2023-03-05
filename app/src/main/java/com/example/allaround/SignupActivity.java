@@ -21,19 +21,25 @@ public class SignupActivity extends AppCompatActivity {
         EditText EditEmail2 = (EditText)findViewById(R.id.EditEmail2);
         EditText EditPassword = (EditText)findViewById(R.id.EditPassword2);
 
-        String name = EditName.getText().toString();
-        String email = EditEmail2.getText().toString();
-        String password = EditPassword.getText().toString();
+
 
         SignupStartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String name = EditName.getText().toString();
+                String email = EditEmail2.getText().toString();
+                String password = EditPassword.getText().toString();
+
+
                 Client.getInstance().setName(name);
                 Client.getInstance().setEmail(email);
                 Client.getInstance().setPassword(password);
 
                 Intent intent = new Intent(SignupActivity.this,HomeActivity.class);
                 startActivity(intent);
+
+
 
 
 
